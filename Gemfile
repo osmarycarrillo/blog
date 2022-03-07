@@ -15,17 +15,25 @@ gem "sqlite3", "~> 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
-# Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem "importmap-rails"
+# Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
+
+gem 'jsbundling-rails', '~> 1.0', '>= 1.0.2'
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails"
+
+gem 'turbo-rails', '~> 1.0', '>= 1.0.1'
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
+# Bundle and process CSS [https://github.com/rails/cssbundling-rails]
+
+gem 'cssbundling-rails', '~> 1.1'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+
+gem 'importmap-rails', '~> 1.0', '>= 1.0.3'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -42,16 +50,14 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
-#gemas instaladas por mi
-gem 'webpacker', '~> 5.4', '>= 5.4.3'
-gem 'bootstrap', '~> 5.1.3'
-gem 'sass-rails', '~> 6.0'
-gem 'turbolinks', '~> 5.2', '>= 5.2.1'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 1.2"
+
+gem 'actiontext', '~> 7.0', '>= 7.0.2.2'
+gem 'trix-rails', '~> 2.4'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

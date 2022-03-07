@@ -1,12 +1,24 @@
 # README
 
-Practica hecha siguiendo el tutorial: Curso completo de introducción a Ruby on Rails
-https://www.youtube.com/watch?v=wSNTT8MLI90
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
+Things you may want to cover:
 
-Tomar en cuenta para hacerlo correr:
+* Ruby version
 
-* Ruby version 3.0.3
-* Rails 7.0.2.2
-* Bundle Install
-* Yarn run build:css
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
