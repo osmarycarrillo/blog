@@ -1,0 +1,19 @@
+<%= form_with(model: @article, local: true) do |form| %>
+  <div class="row g-3 pt-2">
+    <div class="col-md-6">
+      <%=form.label :title, class:"label-form" %>
+      <%=form.text_field :title, class:"form-control"%>
+    </div>
+    <div class="col-md-6">
+      <%=form.label :content, class:"label-form" %>
+      <%=form.rich_text_area :content, class:"form-control"%>
+    </div>
+  </div>
+  
+  <div class="row g-3 pt-3">
+    <div class="col-md-6">
+      <%= form.submit%>
+    </div>
+  </div>
+<%end%>
+<%# la label y el campo de texto se va a llenar con lo que tenga el atributo title del modelo article %>
